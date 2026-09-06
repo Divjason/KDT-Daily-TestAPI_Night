@@ -3,7 +3,7 @@
 // ============================================
 
 const GOOGLE_SCRIPT_URL =
-  "https://script.google.com/macros/s/AKfycbzmigogD1nqE4uwag0pI3CF4VgV4o7G362LrwJCXZBsKAOd_5oPm4WYv9A1hQHS_eWM/exec";
+  "https://script.google.com/macros/s/AKfycbw09rpHOqVxbAo9_kItjRIEBKw_qQSQhqBzobzyLAQnjoAOq4uQ77xbJUrxwWEMn0fh-w/exec";
 
 // ============================================
 // CURRENT TEST
