@@ -1,0 +1,466 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+
+  font-family:
+    Pretendard,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+
+  background: #f4f6f8;
+
+  color: #171a1f;
+
+  line-height: 1.6;
+}
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+  padding: 72px 24px;
+
+  background: #111827;
+
+  color: white;
+}
+
+.hero-inner {
+  width: min(920px, 100%);
+
+  margin: 0 auto;
+}
+
+.eyebrow {
+  margin: 0 0 12px;
+
+  font-size: 13px;
+
+  font-weight: 700;
+
+  letter-spacing: 0.14em;
+
+  opacity: 0.65;
+}
+
+.hero h1 {
+  margin: 0;
+
+  font-size: clamp(36px, 6vw, 58px);
+
+  line-height: 1.1;
+}
+
+.subtitle {
+  margin-top: 14px;
+
+  font-size: 19px;
+
+  color: #cbd5e1;
+}
+
+.test-meta {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 8px;
+
+  margin-top: 28px;
+}
+
+.test-meta span {
+  padding: 7px 13px;
+
+  border: 1px solid rgba(255, 255, 255, 0.15);
+
+  border-radius: 999px;
+
+  background: rgba(255, 255, 255, 0.06);
+
+  font-size: 13px;
+}
+
+/* =========================
+   LAYOUT
+========================= */
+
+.container {
+  width: min(920px, calc(100% - 32px));
+
+  margin: 48px auto 100px;
+}
+
+.section {
+  margin-bottom: 64px;
+}
+
+.section-heading {
+  display: flex;
+
+  gap: 16px;
+
+  align-items: flex-start;
+
+  margin-bottom: 24px;
+}
+
+.section-number {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  width: 44px;
+
+  height: 44px;
+
+  flex-shrink: 0;
+
+  border-radius: 12px;
+
+  background: #111827;
+
+  color: white;
+
+  font-weight: 700;
+}
+
+.section-heading h2 {
+  margin: 0;
+
+  font-size: 26px;
+}
+
+.section-heading p {
+  margin: 4px 0 0;
+
+  color: #6b7280;
+}
+
+/* =========================
+   STUDENT
+========================= */
+
+.student-grid {
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 16px;
+}
+
+.field {
+  padding: 22px;
+
+  border: 1px solid #e5e7eb;
+
+  border-radius: 16px;
+
+  background: white;
+}
+
+.field label {
+  display: block;
+
+  margin-bottom: 8px;
+
+  font-size: 14px;
+
+  font-weight: 700;
+}
+
+.field input {
+  width: 100%;
+
+  padding: 13px 14px;
+
+  border: 1px solid #d1d5db;
+
+  border-radius: 10px;
+
+  font-size: 16px;
+
+  outline: none;
+}
+
+.field input:focus {
+  border-color: #111827;
+}
+
+/* =========================
+   QUESTION
+========================= */
+
+.question-card {
+  margin-bottom: 22px;
+
+  padding: 30px;
+
+  border: 1px solid #e5e7eb;
+
+  border-radius: 18px;
+
+  background: white;
+
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.035);
+}
+
+.question-header {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  margin-bottom: 16px;
+}
+
+.question-number {
+  font-size: 14px;
+
+  font-weight: 800;
+}
+
+.question-badge {
+  padding: 5px 10px;
+
+  border-radius: 999px;
+
+  background: #f3f4f6;
+
+  color: #6b7280;
+
+  font-size: 12px;
+}
+
+.question-card h3 {
+  margin: 0 0 22px;
+
+  font-size: 20px;
+
+  line-height: 1.55;
+}
+
+.question-description {
+  margin: -10px 0 20px;
+
+  color: #6b7280;
+}
+
+/* =========================
+   OPTIONS
+========================= */
+
+.options {
+  display: grid;
+
+  gap: 10px;
+}
+
+.option {
+  display: flex;
+
+  gap: 12px;
+
+  align-items: flex-start;
+
+  padding: 15px 16px;
+
+  border: 1px solid #e5e7eb;
+
+  border-radius: 12px;
+
+  cursor: pointer;
+
+  transition:
+    background 0.15s,
+    border-color 0.15s;
+}
+
+.option:hover {
+  border-color: #9ca3af;
+
+  background: #f9fafb;
+}
+
+.option input {
+  margin-top: 5px;
+
+  transform: scale(1.15);
+}
+
+/* =========================
+   TEXTAREA
+========================= */
+
+textarea {
+  width: 100%;
+
+  min-height: 150px;
+
+  resize: vertical;
+
+  padding: 15px;
+
+  border: 1px solid #d1d5db;
+
+  border-radius: 12px;
+
+  font-family: inherit;
+
+  font-size: 15px;
+
+  line-height: 1.7;
+
+  outline: none;
+}
+
+textarea:focus {
+  border-color: #111827;
+}
+
+/* =========================
+   CONTENT BOX
+========================= */
+
+.scenario {
+  margin-bottom: 20px;
+
+  padding: 18px 20px;
+
+  border-left: 4px solid #111827;
+
+  border-radius: 0 10px 10px 0;
+
+  background: #f8fafc;
+}
+
+pre {
+  overflow-x: auto;
+
+  margin: 18px 0 24px;
+
+  padding: 20px;
+
+  border-radius: 12px;
+
+  background: #111827;
+
+  color: #e5e7eb;
+
+  line-height: 1.65;
+}
+
+code {
+  font-family: "SFMono-Regular", Consolas, monospace;
+}
+
+/* =========================
+   SUBMIT
+========================= */
+
+.submit-section {
+  padding: 32px;
+
+  border-radius: 20px;
+
+  background: #111827;
+
+  color: white;
+}
+
+.submit-info strong {
+  font-size: 18px;
+}
+
+.submit-info p {
+  margin-top: 5px;
+
+  color: #cbd5e1;
+}
+
+#submitButton {
+  width: 100%;
+
+  margin-top: 20px;
+
+  padding: 17px;
+
+  border: 0;
+
+  border-radius: 12px;
+
+  background: white;
+
+  color: #111827;
+
+  font-size: 17px;
+
+  font-weight: 800;
+
+  cursor: pointer;
+}
+
+#submitButton:hover {
+  background: #f1f5f9;
+}
+
+#submitButton:disabled {
+  opacity: 0.5;
+
+  cursor: not-allowed;
+}
+
+.status-message {
+  margin: 16px 0 0;
+
+  text-align: center;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+  padding: 30px;
+
+  text-align: center;
+
+  color: #9ca3af;
+
+  font-size: 13px;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 700px) {
+  .hero {
+    padding: 52px 20px;
+  }
+
+  .student-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .question-card {
+    padding: 22px;
+  }
+
+  .question-card h3 {
+    font-size: 18px;
+  }
+}

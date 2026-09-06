@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Daily Test</title>
+
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <header class="hero">
+      <div class="hero-inner">
+        <p class="eyebrow">2026 KDT DAILY TEST</p>
+
+        <h1 id="testTitle">Daily Test</h1>
+
+        <p id="testSubtitle" class="subtitle">문제를 불러오는 중입니다.</p>
+
+        <div id="testMeta" class="test-meta"></div>
+      </div>
+    </header>
+
+    <main class="container">
+      <!-- Student Information -->
+      <section class="section">
+        <div class="section-heading">
+          <span class="section-number"> 01 </span>
+
+          <div>
+            <h2>Student Information</h2>
+
+            <p>제출자 정보를 입력해주세요.</p>
+          </div>
+        </div>
+
+        <div class="student-grid">
+          <div class="field">
+            <label for="studentId"> 학생번호 </label>
+
+            <input id="studentId" type="text" placeholder="예: 01" />
+          </div>
+
+          <div class="field">
+            <label for="studentName"> 이름 </label>
+
+            <input id="studentName" type="text" placeholder="홍길동" />
+          </div>
+        </div>
+      </section>
+
+      <!-- Questions -->
+      <form id="quizForm">
+        <section class="section">
+          <div class="section-heading">
+            <span class="section-number"> 02 </span>
+
+            <div>
+              <h2>Daily Questions</h2>
+
+              <p>모든 문제에 답한 후 제출해주세요.</p>
+            </div>
+          </div>
+
+          <div id="questionContainer"></div>
+        </section>
+
+        <!-- Submit -->
+        <section class="submit-section">
+          <div class="submit-info">
+            <strong> 제출 전 확인 </strong>
+
+            <p>이름과 학생번호, 모든 답안을 다시 확인해주세요.</p>
+          </div>
+
+          <button id="submitButton" type="submit">답안 제출하기</button>
+
+          <p id="statusMessage" class="status-message"></p>
+        </section>
+      </form>
+    </main>
+
+    <footer class="footer">
+      <p>KDT Daily Test System</p>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
