@@ -1,0 +1,369 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>9/8 Daily Test 정답</title>
+
+    <!-- 기존 Daily Test CSS 재사용 -->
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <header class="hero">
+      <div class="hero-inner">
+        <p class="eyebrow">2026 KDT DAILY TEST · ANSWER</p>
+
+        <h1>9/8 Daily Test 정답</h1>
+
+        <p class="subtitle">ERD · Data Modeling · SQL · 3C · STP</p>
+
+        <div class="test-meta">
+          <span>2026-09-08</span>
+          <span>총 10문항</span>
+          <span>객관식 6문항</span>
+          <span>주관식 4문항</span>
+          <span>100점</span>
+        </div>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="section">
+        <div class="section-heading">
+          <span class="section-number">01</span>
+
+          <div>
+            <h2>Answer Guide</h2>
+            <p>
+              객관식은 정답과 핵심 이유를, 주관식은 채점 기준과 예시 답안을
+              확인하세요.
+            </p>
+          </div>
+        </div>
+
+        <!-- Q1 -->
+        <article class="question-card">
+          <div class="question-header">
+            <span class="question-number">Q1</span>
+            <span class="question-badge">객관식 · 정답 ②</span>
+          </div>
+
+          <h3>
+            ERD(Entity Relationship Diagram)에 대한 설명으로 가장 적절한 것은?
+          </h3>
+
+          <div class="scenario">
+            <strong>정답: ②</strong><br />
+            Database의 Entity와 Entity 사이의 Relationship을 시각적으로 표현한
+            것이다.
+          </div>
+
+          <p>
+            ERD는 Database 구조를 설계하거나 이해하기 위한
+            <strong>데이터 구조의 설계도</strong>입니다. 어떤 Entity가 존재하고,
+            서로 어떤 Relationship으로 연결되는지 확인할 수 있습니다.
+          </p>
+        </article>
+
+        <!-- Q2 -->
+        <article class="question-card">
+          <div class="question-header">
+            <span class="question-number">Q2</span>
+            <span class="question-badge">객관식 · 정답 ④</span>
+          </div>
+
+          <h3>
+            Sakila의 Customer와 Rental을 설명한 내용 중 올바르지 않은 것은?
+          </h3>
+
+          <div class="scenario">
+            <strong>정답: ④</strong><br />
+            “Rental은 물리적인 사물이 아니므로 Entity가 될 수 없다.”는 잘못된
+            설명입니다.
+          </div>
+
+          <p>
+            Entity는 반드시 사람이나 물건일 필요가 없습니다.
+            <strong>사건(Event), 거래(Transaction), 행동(Action)</strong>도
+            별도로 관리할 필요가 있다면 Entity가 될 수 있습니다. 따라서 Sakila의
+            Rental은 “대여라는 사건”을 저장하는 Entity로 볼 수 있습니다.
+          </p>
+        </article>
+
+        <!-- Q3 -->
+        <article class="question-card">
+          <div class="question-header">
+            <span class="question-number">Q3</span>
+            <span class="question-badge">객관식 · 정답 ②</span>
+          </div>
+
+          <h3>
+            한 명의 Customer가 여러 개의 Rental Record를 가질 수 있을 때
+            Cardinality는?
+          </h3>
+
+          <div class="scenario">
+            <strong>정답: ② 1:N</strong>
+          </div>
+
+          <pre><code>Customer 1명
+   ↓
+Rental 여러 건
+
+Customer : Rental
+   1     :   N</code></pre>
+
+          <p>
+            한 명의 Customer가 여러 번 Rental할 수 있기 때문에 Customer와
+            Rental의 관계는 대표적인
+            <strong>One-to-Many(1:N)</strong> 관계입니다.
+          </p>
+        </article>
+
+        <!-- Q4 -->
+        <article class="question-card">
+          <div class="question-header">
+            <span class="question-number">Q4</span>
+            <span class="question-badge">객관식 · 정답 ③</span>
+          </div>
+
+          <h3>3C Analysis의 구성으로 올바른 것은?</h3>
+
+          <div class="scenario">
+            <strong>정답: ③ Company / Customer / Competitor</strong>
+          </div>
+
+          <p>
+            3C는 자사만 분석하는 것이 아니라,
+            <strong>Company(자사), Customer(고객), Competitor(경쟁자)</strong>를
+            함께 살펴 전략적 기회를 찾는 Framework입니다.
+          </p>
+        </article>
+
+        <!-- Q5 -->
+        <article class="question-card">
+          <div class="question-header">
+            <span class="question-number">Q5</span>
+            <span class="question-badge">객관식 · 정답 ③</span>
+          </div>
+
+          <h3>Sakila 내부 Database와 SQL만으로 확인하기 가장 어려운 정보는?</h3>
+
+          <div class="scenario">
+            <strong>정답: ③ Netflix의 현재 가격 정책</strong>
+          </div>
+
+          <p>
+            Sakila Database에 존재하는 Customer, Rental, Payment, Film 등의
+            정보는 SQL로 조회할 수 있지만, 경쟁사의 현재 가격 정책처럼
+            <strong>Database에 없는 외부 정보</strong>는 SQL만으로 알아낼 수
+            없습니다.
+          </p>
+
+          <pre><code>Internal Data
+→ SQL 분석 가능
+
+External Market Data
+→ Market Research 필요</code></pre>
+        </article>
+
+        <!-- Q6 -->
+        <article class="question-card">
+          <div class="question-header">
+            <span class="question-number">Q6</span>
+            <span class="question-badge">객관식 · 정답 ①</span>
+          </div>
+
+          <h3>
+            Customer를 Heavy / Medium / Light로 나눌 때 가장 적절한 설명은?
+          </h3>
+
+          <div class="scenario">
+            <strong>정답: ①</strong><br />
+            마케터가 Business Rule을 정의하고 SQL의 CASE WHEN 등을 사용해 실제
+            Customer를 분류할 수 있다.
+          </div>
+
+          <pre><code>Business Rule
+Heavy  = 20회 이상
+Medium = 10~19회
+Light  = 10회 미만
+
+↓ SQL
+
+CASE WHEN
+...
+END</code></pre>
+
+          <p>
+            핵심은 SQL이 Segment 기준을 자동으로 정하는 것이 아니라,
+            <strong
+              >마케터가 기준을 정의하고 SQL이 그 기준을 실제 Data에 적용</strong
+            >한다는 점입니다.
+          </p>
+        </article>
+
+        <!-- Q7 -->
+        <article class="question-card">
+          <div class="question-header">
+            <span class="question-number">Q7</span>
+            <span class="question-badge">주관식 · 예시 답안</span>
+          </div>
+
+          <h3>
+            SQL 작성 전에 ERD를 확인하면 좋은 이유를 Entity, Relationship, SQL을
+            포함하여 설명하세요.
+          </h3>
+
+          <div class="scenario">
+            <strong>예시 답안</strong><br />
+            ERD를 확인하면 어떤 Entity에 필요한 Data가 저장되어 있고, Entity
+            사이의 Relationship이 어떻게 연결되어 있는지 파악할 수 있습니다.
+            이를 바탕으로 SQL 작성 시 어떤 Table을 조회하고 어떤 Key를 통해
+            JOIN해야 하는지 판단할 수 있습니다.
+          </div>
+
+          <p>
+            <strong>채점 포인트:</strong>
+            Entity의 위치 파악 → Relationship 확인 → SQL 작성 및 JOIN 설계로
+            연결되는 논리가 있으면 인정합니다.
+          </p>
+        </article>
+
+        <!-- Q8 -->
+        <article class="question-card">
+          <div class="question-header">
+            <span class="question-number">Q8</span>
+            <span class="question-badge">주관식 · 예시 답안</span>
+          </div>
+
+          <h3>
+            현재 Problem Hypothesis를 기준으로 가장 먼저 Targeting할 Segment와
+            이유를 설명하세요.
+          </h3>
+
+          <div class="scenario">
+            <strong>권장 답안:</strong>
+            First Rental 이후 재이용이 낮은 Customer
+          </div>
+
+          <p>
+            <strong>예시 답안:</strong><br />
+            First Rental 이후 Repeat Rental이 낮은 기존 Customer를 우선
+            Target으로 선정하겠습니다. 이 Segment는 Day 1에서 정의한 Activation
+            → Retention 구간의 Problem과 직접적으로 연결되므로 Problem Fit이
+            높습니다. 또한 이미 한 번 서비스를 이용한 고객이기 때문에 콘텐츠
+            추천, 재이용 쿠폰, Re-engagement Message 등 구체적인 Marketing
+            Action을 설계할 수 있어 Actionability도 높습니다.
+          </p>
+        </article>
+
+        <!-- Q9 -->
+        <article class="question-card">
+          <div class="question-header">
+            <span class="question-number">Q9</span>
+            <span class="question-badge">주관식 · SQL 해석</span>
+          </div>
+
+          <h3>다음 SQL Query를 마케팅 관점에서 해석하세요.</h3>
+
+          <pre><code>SELECT
+    customer_id,
+    COUNT(*) AS rental_count
+FROM rental
+GROUP BY customer_id
+HAVING COUNT(*) &lt;= 2;</code></pre>
+
+          <div class="scenario">
+            <strong>예시 답안</strong>
+          </div>
+
+          <p>
+            <strong>① 어떤 Customer인가?</strong><br />
+            고객별 Rental 횟수를 계산한 뒤, Rental 횟수가 2회 이하인 저빈도
+            Customer를 추출한 Query입니다.
+          </p>
+
+          <p>
+            <strong>② STP의 어떤 단계에서 활용할 수 있는가?</strong><br />
+            Segmentation에서 저빈도 고객군을 만들고, Targeting에서 Re-engagement
+            Candidate를 선택하는 데 활용할 수 있습니다.
+          </p>
+
+          <p>
+            <strong>③ 가능한 Marketing Action은?</strong><br />
+            재이용 쿠폰, 개인화 콘텐츠 추천, 최근 선호 Category 기반 추천, “다시
+            이용해보세요” 형태의 Re-engagement Message 등을 고려할 수 있습니다.
+          </p>
+        </article>
+
+        <!-- Q10 -->
+        <article class="question-card">
+          <div class="question-header">
+            <span class="question-number">Q10</span>
+            <span class="question-badge">주관식 · 종합</span>
+          </div>
+
+          <h3>
+            Target Customer가 적절한지 확인하기 위한 Data Validation Plan을
+            작성하세요.
+          </h3>
+
+          <div class="scenario">
+            <strong>예시 답안</strong>
+          </div>
+
+          <p>
+            <strong>① Marketing Hypothesis</strong><br />
+            기존 Customer 중 Rental Frequency가 낮은 고객에게 재이용 활성화
+            기회가 있을 것이다.
+          </p>
+
+          <p>
+            <strong>② Required Data / Table</strong><br />
+            customer, rental, payment
+          </p>
+
+          <p>
+            <strong>③ SQL Analysis</strong><br />
+            Customer별 Rental Count를 GROUP BY로 집계하고, Payment까지 연결하여
+            저빈도 고객의 규모와 Revenue 기여도를 확인한다.
+          </p>
+
+          <p>
+            <strong>④ Marketing Decision</strong><br />
+            저빈도 고객의 규모가 충분하고 과거 Revenue 기여도도 의미 있다면,
+            해당 Segment를 Re-engagement Campaign의 우선 Target으로 설정한다.
+          </p>
+
+          <pre><code>Hypothesis
+↓
+Required Data
+↓
+SQL Analysis
+↓
+Evidence
+↓
+Marketing Decision</code></pre>
+        </article>
+      </section>
+
+      <section class="submit-section">
+        <div class="submit-info">
+          <strong>오늘의 핵심 흐름</strong>
+
+          <p>
+            ERD → Data Structure → SQL → Evidence → 3C → STP → Target →
+            Marketing Action
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>KDT Daily Test Answer Guide · 2026-09-08</p>
+    </footer>
+  </body>
+</html>
